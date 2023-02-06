@@ -1,0 +1,103 @@
+.header__container {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+  height: 4.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+
+main {
+  margin-top: 9.375rem;
+  padding: 1rem; 
+}
+
+.container {
+  height: 450px;
+  /* width: 100%; */
+  border: solid 2px rgb(255, 153, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container__presentation {
+  border: solid 3px brown;
+  display: flex;
+  width: 75vw;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.presentation--userInfo > h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-grey-1);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.presentation--userInfo > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey-2);
+}
+
+
+.container__writePost {
+  border: solid 2px blueviolet;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 300px;
+  gap: 1.5rem;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+}
+
+.container__writePost > textarea {
+  max-width: 100%;
+  height: 130px;
+  resize: none;
+  border: 2px solid var(--color-grey-4);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey-3);
+  padding: 1rem 0.5rem;
+  border-radius: var(--border-radius-4px);
+}
+
+
+.container__writePost > input {
+  height: 50px;
+  border: solid 2px var(--color-grey-4);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  border-radius: var(--border-radius-4px);
+}
+
+
+.container__writePost > button {
+  width: 60px;
+  height: 38px;
+  background-color: var(--color-grey-4);
+  border-radius: var(--border-radius-4px);
+  color: var(--color-grey-3);
+  align-self: flex-end;
+}
