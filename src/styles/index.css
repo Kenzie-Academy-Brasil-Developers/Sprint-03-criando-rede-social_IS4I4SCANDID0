@@ -199,9 +199,9 @@ main > h1 {
   border: solid 2px cyan;
   margin: 1rem;
   /* height: 500px; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.5rem; */
   max-width: 90%;
 }
 
@@ -237,8 +237,9 @@ main > h1 {
 .posts--item > h2{
   border: solid 2px forestgreen;
   font-size: 1.50rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-grey-1);
+  margin-bottom: 1.5rem;
 }
 
 
@@ -247,6 +248,7 @@ main > h1 {
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-grey-2);
+  margin-bottom: 1.5rem;
 }
 
 
