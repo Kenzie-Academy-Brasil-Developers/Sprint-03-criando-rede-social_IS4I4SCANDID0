@@ -18,7 +18,7 @@
 } */
 
 .container {
-  height: 425px;
+  height: 435px;
   border: solid 2px rgb(255, 153, 0);
   display: flex;
   flex-direction: column;
@@ -36,11 +36,11 @@
 }
 
 
-.presentation--userInfo>h2 {
+.presentation--userInfo > h2 {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-grey-1);
-  margin: 0.5rem 0 1rem 0;
+  
 }
 
 .presentation--userInfo > p {
@@ -116,11 +116,10 @@ main > h2 {
   border: solid 2px green;
   margin-top: 1rem;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
-  overflow-x: scroll;
-  width: 100%;
-  height: 145px;
+  overflow-x: auto;
+  height: 165px;
   padding-left: 1rem;
 }
 
@@ -129,7 +128,6 @@ main > h2 {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-grey-1);
-  margin: 0.5rem 0 1rem 0;
 }
 
 
@@ -144,7 +142,7 @@ main > h2 {
 .user__presentation {
   /* border: solid 3px brown; */
   display: flex;
-  width: 73vw;
+  width: 71vw;
   gap: 1rem;
   margin-bottom: 1.7rem;
 }
@@ -154,14 +152,120 @@ main > h2 {
 .list--users {
   /* border: solid 2px rgb(2, 0, 2); */
   height: 90%;
-  width: 85%;
+  width: 100%;
 }
 
 
-.list--users > button {
+.users--following {
   background-color: var(--color-brand-1);
+  border: solid 2px var(--color-brand-1);
   color: var(--color-white-fixed);
   font-size: 0.875rem;
-  font-weight: 400;
-  padding: 0.6rem;
+  font-weight: 600;
+  padding: 0.4rem;
+  border-radius: var(--border-radius-2px);
 }
+
+
+.users--noFollowing {
+  background-color: var(--color-white-fixed);
+  color: var(--color-grey-1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: solid 2px var(--color-grey-1);
+  border-radius: var(--border-radius-2px);
+  font-weight: 700;
+  padding: 0.4rem;
+}
+
+
+main > h1 {
+  font-size: 1.75rem;
+  color: var(--color-grey-1);
+  font-weight: 700;
+  margin: 1rem 0 2.5rem 1rem;
+}
+
+
+.container__posts {
+  border: solid 2px violet;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.posts--item {
+  border: solid 2px cyan;
+  margin: 1rem;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 90%;
+}
+
+
+.item--user {
+  border: solid 2px tomato;
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+.item--userInfo {
+  border: solid 2px teal;
+  width: 50vw;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item--userInfo > h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-grey-1);
+}
+
+.item--userInfo > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey-2);
+}
+
+
+.posts--item > h2{
+  border: solid 2px forestgreen;
+  font-size: 1.50rem;
+  font-weight: 700;
+  color: var(--color-grey-1);
+}
+
+
+.posts--item > p {
+  border: solid 2px dodgerblue;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey-2);
+}
+
+
+.posts--interations > button {
+  border: solid 2px indianred;
+  margin-right: 1.5rem;
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-4px);
+  padding: 0.3rem 0.7rem;
+}
+
+.noLiked {
+  color: var(--color-grey-opacity);
+} 
+
+/* trocar a cor com Js .style */
+/* .liked {
+  color: var(--color-red-like);
+} */
