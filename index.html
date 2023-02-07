@@ -17,9 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-  
+
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>Criando rede social</title>
 </head>
 
@@ -43,56 +43,64 @@
         <button>Postar</button>
       </div>
     </section>
+
     <h2>Sugestões para você seguir</h2>
+    <ul class="sugestions__list">
+      <li class="list--users">
+        <div class="user__presentation">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="presentation--info">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
+        </div>
+        <button>Seguindo</button>
+      </li>
+      <li class="list--users">
+        <div class="user__presentation">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="presentation--info">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
+        </div>
+        <button>Seguindo</button>
+      </li>
+      <li class="list--users">
+        <div class="user__presentation">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="presentation--info">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
+        </div>
+        <button>Seguindo</button>
+      </li>
+    </ul>
 
-    <section class="container__sugestions">
-      <div class="sugestions__presentation">
-        <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
-        <div class="presentation--userInfo">
-          <h2>Samuel Leão</h2>
-          <p>Front end Engineer </p>
+    <ul class="container__posts">
+      <li class="posts--item">
+        <div class="item--user">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="item--userInfo">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
         </div>
-      </div>
-      <div class="sugestions__presentation">
-        <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
-        <div class="presentation--userInfo">
-          <h2>Samuel Leão</h2>
-          <p>Front end Engineer </p>
-        </div>
-      </div>
-      <div class="sugestions__presentation">
-        <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
-        <div class="presentation--userInfo">
-          <h2>Samuel Leão</h2>
-          <p>Front end Engineer </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container__posts">
-      <div class="sugestions__presentation">
-        <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
-        <div class="presentation--userInfo">
-          <h2>Samuel Leão</h2>
-          <p>Front end Engineer </p>
-        </div>
-      </div>
-      
-      <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
-      <p>A Framework Digital, empresa mineira especializada em Tecnologia da Informação, 
-        irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
-        O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars.
-        Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi,
-        que compõem o lado bom da força.</p>
-     
-      <div class="posts--interations">
+        <h1>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+        <p>A Framework Digital, empresa mineira especializada em Tecnologia da Informação,
+          irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+          O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars.
+          Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi,
+          que compõem o lado bom da força.</p>
+        <!-- <div class="posts--interations"> -->
         <button>Abrir post</button>
         <i class="fas fa-heart"></i>
-      </div>
-    </section>
+        <!-- </div> -->
+      </li>
+    </ul>
   </main>
   <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
 </html>
-    
