@@ -13,12 +13,8 @@
 }
 
 
-/* main {
- 
-} */
-
 .container {
-  height: 435px;
+  /* height: 435px; */
   border: solid 2px rgb(255, 153, 0);
   display: flex;
   flex-direction: column;
@@ -28,9 +24,9 @@
 }
 
 .container__presentation {
-  border: solid 3px brown;
+  /* border: solid 3px brown; */
   display: flex;
-  width: 75vw;
+  /* width: 75vw; */
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -38,7 +34,7 @@
 
 .presentation--userInfo > h2 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-grey-1);
   
 }
@@ -51,7 +47,7 @@
 
 
 .container__writePost {
-  border: solid 2px blueviolet;
+  /* border: solid 2px blueviolet; */
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -104,16 +100,16 @@ img {
 }
 
 
-main > h2 {
-  font-size: 1.1rem;
+.container > h2 {
+  font-size: 1.25rem;
   font-weight: 600;
   margin: 2rem 0 1.5rem 0;
-  padding-left: 1rem;
+  padding: 2rem 0 1rem 0.6rem;
 }
 
 
 .sugestions__list {
-  border: solid 2px green;
+  /* border: solid 2px green; */
   margin-top: 1rem;
   display: flex;
   gap: 3rem;
@@ -126,7 +122,7 @@ main > h2 {
 
 .presentation--info > h2 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-grey-1);
 }
 
@@ -183,12 +179,12 @@ main > h1 {
   font-size: 1.75rem;
   color: var(--color-grey-1);
   font-weight: 700;
-  margin: 1rem 0 2.5rem 1rem;
+  margin: 1.5rem 0 1.5rem 1rem;
 }
 
 
 .container__posts {
-  border: solid 2px violet;
+  /* border: solid 2px violet; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -196,7 +192,7 @@ main > h1 {
 
 
 .posts--item {
-  border: solid 2px cyan;
+  /* border: solid 2px cyan; */
   margin: 1rem;
   /* height: 500px; */
   /* display: flex;
@@ -207,7 +203,7 @@ main > h1 {
 
 
 .item--user {
-  border: solid 2px tomato;
+  /* border: solid 2px tomato; */
   display: flex;
   gap: 1rem;
 }
@@ -215,7 +211,7 @@ main > h1 {
 
 
 .item--userInfo {
-  border: solid 2px teal;
+  /* border: solid 2px teal; */
   width: 50vw;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -223,7 +219,7 @@ main > h1 {
 
 .item--userInfo > h2 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-grey-1);
 }
 
@@ -235,16 +231,16 @@ main > h1 {
 
 
 .posts--item > h2{
-  border: solid 2px forestgreen;
+  /* border: solid 2px forestgreen; */
   font-size: 1.50rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-grey-1);
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 1.5rem 0 ;
 }
 
 
 .posts--item > p {
-  border: solid 2px dodgerblue;
+  /* border: solid 2px dodgerblue; */
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-grey-2);
@@ -253,7 +249,7 @@ main > h1 {
 
 
 .posts--interations > button {
-  border: solid 2px indianred;
+  /* border: solid 2px indianred; */
   margin-right: 1.5rem;
   background-color: var(--color-grey-1);
   color: var(--color-white-fixed);
@@ -263,11 +259,53 @@ main > h1 {
   padding: 0.3rem 0.7rem;
 }
 
+
 .noLiked {
   color: var(--color-grey-opacity);
 } 
+
+
 
 /* trocar a cor com Js .style */
 /* .liked {
   color: var(--color-red-like);
 } */
+
+
+@media(min-width: 769px) {
+
+  .header__container {
+    padding: 1.5rem;
+  }
+
+  
+  /* .container {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  
+  .container__writePost {
+    /* border: solid 2px blueviolet; */
+    display: flex;
+    /* flex-direction: column; */
+    width: 60%;
+    height: 300px;
+    gap: 1.5rem;
+  }
+  
+  
+  .sugestions__list {
+    border: solid 2px green;
+    margin-top: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 3rem;
+    align-items: center;
+    overflow-x: auto;
+    height: 165px;
+    padding-left: 1rem;
+  }
+
+/* RESOLVER O HTML PARA FAZER O LAYOUT CORRETO */
+}

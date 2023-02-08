@@ -20,6 +20,7 @@
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
   <title>Criando rede social</title>
 </head>
 
@@ -42,9 +43,8 @@
         <textarea name="post" id="post" cols="30" rows="10"> Digitar descrição do post</textarea>
         <button>Postar</button>
       </div>
-    </section>
-
-    <h2>Sugestões para você seguir</h2>
+      
+      <h2>Sugestões para você seguir</h2>
     <ul class="sugestions__list">
       <li class="list--users">
         <div class="user__presentation">
@@ -77,6 +77,7 @@
         <button class="users--noFollowing" >Seguir</button>
       </li>
     </ul>
+  </section>
     <h1>Posts</h1>
     <ul class="container__posts">
       <li class="posts--item">
@@ -96,7 +97,60 @@
         <i class="fa-solid fa-heart noLiked"></i>
         </div>
       </li>
+      <li class="posts--item">
+        <div class="item--user">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="item--userInfo">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
+        </div>
+        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+        <p>A Framework Digital, empresa mineira especializada em Tecnologia da Informação,
+          irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+        </p>
+        <div class="posts--interations">
+        <button>Abrir post</button>
+        <i class="fa-solid fa-heart noLiked"></i>
+        </div>
+      </li>
+      <li class="posts--item">
+        <div class="item--user">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="item--userInfo">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer </p>
+          </div>
+        </div>
+        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+        <p>A Framework Digital, empresa mineira especializada em Tecnologia da Informação,
+          irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+        </p>
+        <div class="posts--interations">
+        <button>Abrir post</button>
+        <i class="fa-solid fa-heart noLiked"></i>
+        </div>
+      </li>
     </ul>
+    <dialog class="modal__controller">
+      <span class="modal__close" id="closeBtn">X</span>
+      <section class="modal__container">
+        <div class="item--user">
+          <img src="./src/assets/img/user1.svg" alt="Foto de Samuel Leão">
+          <div class="item--userInfo">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer</p>
+          </div>
+        </div>
+        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+        <p>
+          A Framework Digital, empresa mineira especializada em Tecnologia da Informação,
+          irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+          O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias,
+          os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.
+        </p>
+      </section>
+    </dialog>
   </main>
   <script type="module" src="./src/scripts/index.js"></script>
 </body>
