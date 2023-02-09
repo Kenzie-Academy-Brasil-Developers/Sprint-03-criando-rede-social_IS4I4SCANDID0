@@ -1,7 +1,5 @@
 .modal__controller {
     border: solid 2px var(--color-grey-1);
-    position: relative;
-    z-index: 0;
     border-radius: var(--border-radius-8px);
     width: 80vw;
   }
@@ -16,6 +14,8 @@
     font-weight: 800;
     color: var(--color-grey-1);
     margin: 1rem 0 1.5rem 0 ;
+    position: relative;
+    z-index: 0;
   }
   
   .modal__container > p {

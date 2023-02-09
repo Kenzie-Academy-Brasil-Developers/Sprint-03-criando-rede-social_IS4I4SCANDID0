@@ -1,15 +1,18 @@
-export function renderPosts(arrayPosts) {
-  const ulPosts = document.querySelector('ul')
-  ulPosts.classList.add('container__posts')
+import { closeModal, createTheModal } from './modal.js'
 
-  ulPosts.innerHTML = ''
+export function renderPosts(arrayPosts) {
+  const controllerContent = document.querySelector('.content__controller')
+
+  const ulPosts = document.querySelector('.container__posts')
 
   arrayPosts.forEach(post => {
 
     const publication = createPosts(post)
-
+  
     ulPosts.appendChild(publication)
   })
+  
+  controllerContent.appendChild(ulPosts)  
 }
   
 
@@ -44,13 +47,15 @@ function createPosts(post) {
   postTitle.innerText = post.title
 
   const postContent = document.createElement('p')
-  postContent.innerText = `${post.title.substring(0, 190) + ' ' + '...Leia mais clicando abaixo'}`
-
+  postContent.innerText = `${post.title.substring(0, 190)+'...'+'  '+ ' Leia mais clicando abaixo'}`
+  
   const postInteract = document.createElement('div')
   postInteract.classList.add('posts--interactions')
   
   const openPost = document.createElement('button')
-  // colocar dataset
+  openPost.innerText = 'Abrir post'
+  openPost.classList.add('openBtn')
+  openPost.dataset.postId = post.id
   
   const postLikes = document.createElement('i')
   postLikes.classList.add('fa-solid', 'fa-heart')
@@ -64,5 +69,23 @@ function createPosts(post) {
   publications.append(userBox, postTitle, postContent, openPost, postInteract)
 
   return publications
-  //revisar tudo com calma e descobrir como acessar o data base com import
+}
+
+export function modalRender(array) {
+  const modalControl = document.querySelector('.modal__controller')
+
+  const buttons = document.querySelectorAll('.openBtn')
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const contentModal = createTheModal(button.dataset.postId, array)
+      
+      modalControl.innerHTML = ''
+
+      modalControl.appendChild(contentModal)
+      
+      modalControl.showModal()
+      closeModal()
+    })
+  })
 }

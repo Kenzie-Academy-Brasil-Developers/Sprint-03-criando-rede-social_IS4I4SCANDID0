@@ -1,3 +1,5 @@
+/* DEBUGAR CSS COM PASCIÊNCIA */
+
 .header__container {
   background-color: var(--color-grey-1);
   color: var(--color-white-fixed);
@@ -175,10 +177,11 @@ img {
 }
 
 
-/* main {
-  background-color: khaki;
-  padding: 0 1rem 0 1rem;
-} */
+main {
+  /* background-color: khaki; */
+  /* padding: 0 1rem 0 1rem; */
+  margin-top: 76px;
+}
 
 
 main > h1 {
@@ -253,14 +256,14 @@ main > h1 {
   margin-bottom: 1.5rem;
 }
 
-.posts--interations{
+.posts--interactions{
   display: flex;
   /* flex-direction: row; */
 }
   
 
-.posts--interations > button {
-  /* border: solid 2px indianred; */
+.posts--interactions > button {
+  border: solid 2px indianred;
   margin-right: 1.5rem;
   background-color: var(--color-grey-1);
   color: var(--color-white-fixed);
@@ -334,14 +337,14 @@ main > h1 {
 
   /* DIMINUIR  HEIGT */
   .sugestions__list {
-    /* border: solid 2px  green; */
+    border: solid 2px  green;
     margin-top: 13rem;
     display: flex;
     flex-direction: column;
     width: 30%;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    /* height: 600px; */
     overflow-x: hidden;
   }
 
