@@ -40,9 +40,12 @@
           </div>
         </div>
         <div class="container__writePost">
-          <input type="text" placeholder="Digitar título do post">
-          <textarea name="post" id="post" cols="30" rows="10"> Digitar descrição do post</textarea>
-          <button>Postar</button>
+          <form>
+            <input class="write__posts" type="text" name="title" placeholder="Digitar título do post">
+            <textarea class="write__posts" name="text" id="text" cols="30" rows="10" 
+            placeholder="Digitar descrição do post"></textarea>
+            <button type="submit" id="post">Postar</button>
+          </form>
         </div>
       </div>
       <ul class="sugestions__list">
@@ -79,7 +82,7 @@
         </li>
       </ul>
     </section>
-    
+
     <section class="content__controller">
       <h1>Posts</h1>
       <ul class="container__posts">
@@ -138,7 +141,7 @@
       </ul>
       <section>
 
-        <dialog  class="modal__controller">
+        <dialog class="modal__controller">
           <!-- <section class="modal__container">
             <span class="modal__close" id="closeBtn">X</span>
             <div class="item--user">
