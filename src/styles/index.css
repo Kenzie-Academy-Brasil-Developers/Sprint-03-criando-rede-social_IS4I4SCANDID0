@@ -15,7 +15,7 @@
 
 .container {
   /* height: 435px; */
-  border: solid 2px rgb(255, 153, 0);
+  /* border: solid 2px rgb(255, 153, 0); */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -175,10 +175,10 @@ img {
 }
 
 
-main {
+/* main {
   background-color: khaki;
-  /* padding: 0 1rem 0 1rem; */
-}
+  padding: 0 1rem 0 1rem;
+} */
 
 
 main > h1 {
@@ -253,6 +253,11 @@ main > h1 {
   margin-bottom: 1.5rem;
 }
 
+.posts--interations{
+  display: flex;
+  /* flex-direction: row; */
+}
+  
 
 .posts--interations > button {
   /* border: solid 2px indianred; */
@@ -263,6 +268,7 @@ main > h1 {
   font-weight: 600;
   border-radius: var(--border-radius-4px);
   padding: 0.3rem 0.7rem;
+  margin-right: 1rem;
 }
 
 
@@ -296,7 +302,7 @@ main > h1 {
   }
 
   .container__controller {
-    border: solid 2px red;
+    /* border: solid 2px red; */
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -314,7 +320,7 @@ main > h1 {
     display: flex;
     flex-direction: column;
     width: 820px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .container__writePost {
@@ -328,7 +334,7 @@ main > h1 {
 
   /* DIMINUIR  HEIGT */
   .sugestions__list {
-    border: solid 2px  green;
+    /* border: solid 2px  green; */
     margin-top: 13rem;
     display: flex;
     flex-direction: column;
