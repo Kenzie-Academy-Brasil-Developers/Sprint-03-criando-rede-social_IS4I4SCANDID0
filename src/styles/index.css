@@ -284,6 +284,7 @@ main > h1 {
     padding: 2rem;
   }
 
+  /* TIRAR O PADDING/MARGIN-TOP, DIMINUIR HEIGHTS */
   .container {
     width: 100%;
     display: flex;
@@ -325,7 +326,7 @@ main > h1 {
   }
   
 
-  
+  /* DIMINUIR  HEIGT */
   .sugestions__list {
     border: solid 2px  green;
     margin-top: 13rem;
