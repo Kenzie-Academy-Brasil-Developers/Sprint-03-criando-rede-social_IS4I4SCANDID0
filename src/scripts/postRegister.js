@@ -1,27 +1,29 @@
 import { renderPosts } from "./render.js" 
-//construir objeto manualmente *VER DEMO DE HOJE*
 export function registerPost(array) {
-  const textInputs = document.querySelectorAll('.write__posts')
+  const postTitle = document.querySelector('#title')
+  const postDescription = document.querySelector('#text')
+  console.log(postTitle)
+  console.log(postDescription)
+  //construir objeto manualmente / entradas de texto selecionadas individualmente *VER DEMO DE HOJE*
+  // const newPost = {}
 
-  const newPost = {}
+  // let voidInput = 0
 
-  let voidInput = 0
+  // textInputs.forEach(input => {
+  //   if(input.value === '') {
+  //     voidInput ++
+  //   }
 
-  textInputs.forEach(input => {
-    if(input.value === '') {
-      voidInput ++
-    }
+  //   newPost[input.name] = input.value
+  // })
 
-    newPost[input.name] = input.value
-  })
+  // newPost.id = array.length + 1
 
-  newPost.id = array.length + 1
+  // if(voidInput !== 0){
+  //   alert ('Preencha os campos necessários')
+  // }
 
-  if(voidInput !== 0){
-    alert ('Preencha os campos necessários')
-  }
-
-  array.push(newPost)
+  // array.push(newPost)
 }
 
 
