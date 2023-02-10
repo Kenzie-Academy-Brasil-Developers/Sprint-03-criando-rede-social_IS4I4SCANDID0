@@ -56,7 +56,7 @@ function createPosts(post) {
   openPost.innerText = 'Abrir post'
   openPost.classList.add('openBtn')
   openPost.dataset.postId = post.id
-  
+  console.log(openPost)
   const postLikes = document.createElement('i')
   postLikes.classList.add('fa-solid', 'fa-heart')
   //DEPOIS CRIAR UM addEventLIstetner PARA CURTR OS POSTS
@@ -85,6 +85,7 @@ export function modalRender(array) {
       modalControl.appendChild(contentModal)
       
       modalControl.showModal()
+      
       closeModal()
     })
   })
