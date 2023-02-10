@@ -30,6 +30,7 @@
   border: solid 2px red;
   display: flex;
   flex-direction: column;
+  margin-top: 2.5rem;
 }
 
 .container__presentation {
@@ -110,12 +111,17 @@ form > button {
 
 
 
-.sugestions__list > h2 {
+.container > h2 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 2rem 0 1.5rem 0;
-  padding: 2rem 0 1rem 0.6rem;
+  margin: 3rem 0 0.5rem 0;
+  border: solid 1px blueviolet;
 }
+
+/* .list__title > div {
+  display: flex;
+  flex-direction: column;
+}  */
 
 
 .sugestions__list {
@@ -126,7 +132,6 @@ form > button {
   align-items: center;
   overflow-x: auto;
   max-height: 100%;
-  padding-left: 1rem;
 }
 
 
@@ -156,9 +161,8 @@ form > button {
 
 
 .list--users {
-  /* border: solid 2px rgb(2, 0, 2); */
-  height: 90%;
-  max-width: 100%;
+  border: solid 2px rgb(2, 0, 2);
+
 }
 
 
@@ -267,12 +271,20 @@ main {
 
 .posts--interactions{
   display: flex;
-  /* flex-direction: row; */
+  align-items: center;
+  gap: 0.5rem;
 }
   
 
+.posts--interactions > span {
+  border:  solid 1px orangered;
+  font-size: .875rem;
+  color: var(--color-grey-1);
+  font-weight: 400;
+}
+
+
 .posts--interactions > button {
-  border: solid 2px indianred;
   margin-right: 1.5rem;
   background-color: var(--color-grey-1);
   color: var(--color-white-fixed);
@@ -281,6 +293,7 @@ main {
   border-radius: var(--border-radius-4px);
   padding: 0.3rem 0.7rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 
@@ -360,12 +373,12 @@ main {
   .sugestions__list {
     border: solid 2px  green;
     margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column; */
     width: 30%;
-    align-items: center;
-    justify-content: center;
-    height: 570px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 400px; */
     overflow-x: hidden;
   }
 
@@ -378,6 +391,7 @@ main {
 
   /* DEBUGAR */
   .list--users {
+    max-height: 100%;
     max-width: 100%;
     overflow-x: hidden;
     display: flex;

@@ -4,22 +4,25 @@ export function registerPost(array) {
   const postTitle = document.querySelector('#title')
   const postDescription = document.querySelector('#text')
 
-  if(postTitle === '' || postDescription === ''){
+  if(postTitle !== '' || postDescription !== ''){
+   
+    const newPost = {
+      id: array.length +1,
+      title: postTitle.value,
+      text: postDescription.value,
+      user: "Samuel Leão",
+      stack: "Front end Engineer",
+      img: "./src/assets/img/user1.svg",
+      likes: 17
+    }
+    // console.log(array)
+    array.push(newPost)
+  
+  } else {
     alert("Preencha os campos de texto corretamente, e faça uma nova tentativa")
-  }
-
-  const newPost = {
-    id: array.length +1,
-    title: postTitle.value,
-    text: postDescription.value,
-    user: "Samuel Leão",
-    stack: "Front end Engineer",
-    img: "./src/assets/img/user1.svg",
-    likes: 17
-  }
-
-  array.push(newPost)
+  } 
 }
+
 
   
 export function eventRegister(array) {
@@ -31,6 +34,7 @@ export function eventRegister(array) {
     registerPost(array)
     
     renderPosts(array)
+    // console.log(array)
   })
 } 
 
