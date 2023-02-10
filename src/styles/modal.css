@@ -1,40 +1,39 @@
 .modal__controller {
-    border: solid 2px var(--color-grey-1);
-    border-radius: var(--border-radius-8px);
-    width: 80vw;
-  }
-  
-  .modal__container {
-    margin-top: 1rem;
-  }
-  
-  .modal__container > h2{
-    /* border: solid 2px yellow; */
-    font-size: 1.50rem;
-    font-weight: 800;
-    color: var(--color-grey-1);
-    margin: 1rem 0 1.5rem 0 ;
-    position: relative;
-    z-index: 0;
-  }
-  
-  .modal__container > p {
-    /* border: solid 2px orangered; */
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-grey-2);
-    margin-bottom: 1.5rem;
-  }
-  
-  
-  .modal__close {
-    background-color: var(--color-grey-5);
-    color: var(--color-grey-3);
-    font-family: var(--font-modal-close);
-    padding: 4px 10px;
-    border-radius: 100%;
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    z-index: 1;
-  }
+  border: solid 2px var(--color-grey-1);
+  border-radius: var(--border-radius-8px);
+  width: 80vw;
+}
+
+/* .modal__container {
+  margin-top: 1rem;
+} */
+
+.modal__container > h2 {
+  /* border: solid 2px yellow; */
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-grey-1);
+  margin: 1rem 0 1.5rem 0;
+  position: relative;
+  z-index: 0;
+}
+
+.modal__container > p {
+  /* border: solid 2px orangered; */
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey-2);
+  margin-bottom: 1.5rem;
+}
+
+.modal__close {
+  background-color: var(--color-grey-5);
+  color: var(--color-grey-3);
+  font-family: var(--font-modal-close);
+  padding: 4px 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 1;
+}
