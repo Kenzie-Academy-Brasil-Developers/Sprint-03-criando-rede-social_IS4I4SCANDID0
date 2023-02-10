@@ -106,7 +106,6 @@ form > button {
   border-radius: var(--border-radius-4px);
   color: var(--color-grey-3);
   align-self: flex-end;
-  cursor: pointer;
 }
 
 
@@ -345,6 +344,12 @@ main {
     gap: 1.5rem;
   }
   
+  form > button {
+    color: var(--color-white-fixed);
+    background-color: var(--color-brand-1);
+    cursor: pointer;
+  }
+
   form > button:hover {
     color: var(--color-white-fixed);
     background-color: var(--color-brand-2);
@@ -371,7 +376,7 @@ main {
   }
 
 
-
+  /* DEBUGAR */
   .list--users {
     max-width: 100%;
     overflow-x: hidden;

@@ -1,5 +1,5 @@
-import { renderPosts } from "./render" //PEDIR AJUDA AMANHÃ
-
+import { renderPosts } from "./render.js" 
+//construir objeto manualmente *VER DEMO DE HOJE*
 export function registerPost(array) {
   const textInputs = document.querySelectorAll('.write__posts')
 

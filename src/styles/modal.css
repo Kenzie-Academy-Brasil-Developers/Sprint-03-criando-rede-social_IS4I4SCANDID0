@@ -37,3 +37,10 @@
   right: 10px;
   z-index: 1;
 }
+
+/* FAZER O BREAKPOINT PARA DESKTOP  */
+@media (min-width: 769px) {
+  .modal__close {
+    cursor: pointer;
+  }
+}
