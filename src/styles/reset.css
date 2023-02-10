@@ -23,8 +23,8 @@ time, mark, audio, video, button, input {
 	font: inherit;
 	vertical-align: baseline;
  	box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  	outline: none;
+  font-family: 'Inter', sans-serif;
+  outline: none;
 	list-style: none;
 	line-height: 150%;
 }

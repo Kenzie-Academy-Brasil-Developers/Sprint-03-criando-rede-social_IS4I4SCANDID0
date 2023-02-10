@@ -1,32 +1,27 @@
 import { renderPosts } from "./render.js" 
+
 export function registerPost(array) {
   const postTitle = document.querySelector('#title')
   const postDescription = document.querySelector('#text')
-  console.log(postTitle)
-  console.log(postDescription)
-  //construir objeto manualmente / entradas de texto selecionadas individualmente *VER DEMO DE HOJE*
-  // const newPost = {}
 
-  // let voidInput = 0
+  if(postTitle === '' || postDescription === ''){
+    alert("Preencha os campos de texto corretamente, e faça uma nova tentativa")
+  }
 
-  // textInputs.forEach(input => {
-  //   if(input.value === '') {
-  //     voidInput ++
-  //   }
+  const newPost = {
+    id: array.length +1,
+    title: postTitle.value,
+    text: postDescription.value,
+    user: "Samuel Leão",
+    stack: "Front end Engineer",
+    img: "./src/assets/img/user1.svg",
+    likes: 17
+  }
 
-  //   newPost[input.name] = input.value
-  // })
-
-  // newPost.id = array.length + 1
-
-  // if(voidInput !== 0){
-  //   alert ('Preencha os campos necessários')
-  // }
-
-  // array.push(newPost)
+  array.push(newPost)
 }
 
-
+  
 export function eventRegister(array) {
   const postBtn = document.querySelector('#post')
 
@@ -38,3 +33,4 @@ export function eventRegister(array) {
     renderPosts(array)
   })
 } 
+
