@@ -1,5 +1,4 @@
 export function createTheModal(id, array) {
-  // const controlModal = document.querySelector('.modal__controller')
 
   const modalBox = document.createElement('section')
   modalBox.classList.add('modal__container')

@@ -26,10 +26,10 @@ body {
 
 body::-webkit-scrollbar {
   width: .75rem;
-  background-color: var(--color-grey-1);
+  background-color: var(--color-white-fixed);
 }
 
 body::-webkit-scrollbar-thumb {
   width: .75rem;
-  background-color:var(--color-grey-3);
+  background-color:var(--color-grey-0);
 }
