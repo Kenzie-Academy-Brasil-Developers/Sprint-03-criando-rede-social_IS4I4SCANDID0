@@ -84,8 +84,9 @@ form  > textarea {
 }
 
 form  > textarea:focus {
-  border-style: var(--color-brand-1);
+  border-color: var(--color-brand-1);
   color: var(--color-brand-1);
+  outline: none;
 }
 
 
