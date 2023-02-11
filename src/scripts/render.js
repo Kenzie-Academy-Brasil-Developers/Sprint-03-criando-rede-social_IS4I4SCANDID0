@@ -58,7 +58,7 @@ function createPosts(post) {
   openPost.dataset.postId = post.id
   
   const postLikes = document.createElement('i')
-  postLikes.classList.add('fa-solid', 'fa-heart')
+  postLikes.classList.add('fas', 'fa-heart')
   //DEPOIS CRIAR UM addEventLIstetner PARA CURTR OS POSTS
 
   const countLike = document.createElement('span')

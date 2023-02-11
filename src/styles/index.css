@@ -16,27 +16,21 @@
 
 
 .container {
-  /* height: 400px; */
-  border: solid 2px rgb(255, 153, 0);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* padding: 0 1rem; */
 }
   
 
-/* estou mexendo aqui */
+
 .container__controller {
-  border: solid 2px red;
   display: flex;
   flex-direction: column;
   margin: 2rem 1rem 1.5rem 1.5rem;
 }
 
 .container__presentation {
-  /* border: solid 3px brown; */
   display: flex;
-  /* width: 75vw; */
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -57,8 +51,6 @@
 
 
 form {
-  border: solid 2px blueviolet;
-  display: flex;
   flex-direction: column;
   max-width: 100%;
   max-height: 300px;
@@ -111,7 +103,6 @@ form > button {
 
 
 .suggestions__container {
-  background-color: deepskyblue;
   padding-left: 1rem;
 }
 
@@ -126,7 +117,6 @@ form > button {
 
 
 .sugestions__list {
-  border: solid 2px green;
   margin-top: 1rem;
   display: flex;
   gap: 3rem;
@@ -152,19 +142,12 @@ form > button {
 
 
 .user__presentation {
-  /* border: solid 3px brown; */
   display: flex;
   width: 71vw;
   gap: 1rem;
   margin-bottom: 1.7rem;
 }
 
-
-
-.list--users {
-  border: solid 2px rgb(2, 0, 2);
-
-}
 
 
 .users--following {
@@ -191,10 +174,7 @@ form > button {
 
 
 main {
-  /* background-color: khaki; */
-  /* padding: 0 1rem 0 1rem; */
   margin-top: 4.75rem;
-  /* padding: 0 1rem; */
 }
 
 
@@ -203,12 +183,10 @@ main {
   color: var(--color-grey-1);
   font-weight: 700;
   margin: 1.5rem 0 1.5rem 1rem;
-  /* border:  solid 2px darkslateblue; */
 }
 
 
 .container__posts {
-  /* border: solid 2px violet; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -216,18 +194,12 @@ main {
 
 
 .posts--item {
-  /* border: solid 2px cyan; */
   margin: 1rem;
-  /* height: 500px; */
-  /* display: flex;
-  flex-direction: column;
-  gap: 1.5rem; */
   max-width: 90%;
 }
 
 
 .item--user {
-  /* border: solid 2px tomato; */
   display: flex;
   gap: 1rem;
 }
@@ -235,7 +207,6 @@ main {
 
 
 .item--userInfo {
-  /* border: solid 2px teal; */
   width: 50vw;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -255,7 +226,6 @@ main {
 
 
 .posts--item > h2{
-  /* border: solid 2px forestgreen; */
   font-size: 1.50rem;
   font-weight: 700;
   color: var(--color-grey-1);
@@ -264,7 +234,6 @@ main {
 
 
 .posts--item > p {
-  /* border: solid 2px dodgerblue; */
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-grey-2);
@@ -299,16 +268,10 @@ main {
 }
 
 
-.noLiked {
-  color: var(--color-grey-opacity);
+.fas .fa-heart > i {
+  background-color: var(--color-grey-opacity);
 } 
 
-
-
-/* trocar a cor com Js .style */
-/* .liked {
-  color: var(--color-red-like);
-} */
 
 
 @media(min-width: 769px) {
@@ -322,37 +285,30 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: space-between;
+    gap: 3rem;
+    align-items: flex-start;
     margin: 0;
   }
 
   .container__controller {
-    /* border: solid 2px red; */
     width: 60%;
     display: flex;
     flex-direction: column;
-    height: 500px;
   }
   
-
-  
-
-  /* .container__presentation {
-    display: flex;
-    flex-direction: column;
-  } */
 
   .content__controller{
     display: flex;
     flex-direction: column;
-    width: 820px;
-    /* background-color: aqua; */
+    width: 900px;
+    max-width: 77%;
+  }
+
+  .content__controller > h1 {
+    margin: 0 0 2rem 1rem;
   }
 
   .container__writePost {
-    /* border: solid 2px blueviolet; */
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -371,17 +327,26 @@ main {
     transition: 1.2s;
   }
 
+  .suggestions__container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow-x: hidden;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
   /* DIMINUIR  HEIGT */
   .sugestions__list {
-    border: solid 2px  green;
-    margin-top: 4rem;
-    display: block;
-    /* flex-direction: column; */
-    width: 30%;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* height: 400px; */
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
+    gap: 0.3rem;
   }
 
   .sugestions__list  > h2 {
@@ -391,14 +356,32 @@ main {
   }
 
 
-  /* DEBUGAR */
   .list--users {
     max-height: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
     display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
   }
 
+  .user__presentation {
+    margin: 0;
+  }
+
+  .users--following {
+    padding: 0.3rem 0.5rem;
+    max-height: 50%;
+    max-width: 50%;
+    margin: 0 2rem 2rem 0;
+  }
+
+
+  .users--noFollowing {
+    padding: 0.3rem 0.5rem;
+    max-height: 50%;
+    max-width: 50%;
+    margin: 0 2rem 2rem 0;
+  }
 }
 /* REVER O LAYOUT DE POSTS NO DESKTOP E RESOLVER O BUG NO CSS MOBILE DA ABA DE SUGESTÕES */
 /* Editar a scrollBar desktop */
