@@ -8,8 +8,8 @@ export function registerPost(array) {
    
     const newPost = {
       id: array.length +1,
-      title: postTitle.value,
-      text: postDescription.value,
+      title: postTitle.value.trim(),
+      text: postDescription.value.trim(),
       user: "Samuel Leão",
       stack: "Front end Engineer",
       img: "./src/assets/img/user1.svg",
