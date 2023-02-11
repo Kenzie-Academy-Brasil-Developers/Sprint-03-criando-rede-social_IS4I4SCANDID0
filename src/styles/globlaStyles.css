@@ -2,24 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 :root {
-    --color-brand-1: #4263EB;
-    --color-brand-2: #364FC7;
-    --color-grey-0: #0A0C0D;
-    --color-grey-1: #212529;
-    --color-grey-2: #495057;
-    --color-grey-3: #868E96;
-    --color-grey-4: #DEE2E6;
-    --color-grey-5: #F8F9FA;
-    --color-grey-opacity: rgba(33, 37, 41, 0.5);
-    --color-white-fixed: #FFFFFF;
-    --color-red-like: #D7443E;
-    --font-text: 'inter', sans-serif;
-    --font-modal-close: 'Nunito', sans-serif;
-    --border-radius-2px: 0.125rem;
-    --border-radius-4px: 0.25rem;
-    --border-radius-8px: 0.5rem;
+  --color-brand-1: #4263EB;
+  --color-brand-2: #364FC7;
+  --color-grey-0: #0A0C0D;
+  --color-grey-1: #212529;
+  --color-grey-2: #495057;
+  --color-grey-3: #868E96;
+  --color-grey-4: #DEE2E6;
+  --color-grey-5: #F8F9FA;
+  --color-grey-opacity: rgba(33, 37, 41, 0.5);
+  --color-white-fixed: #FFFFFF;
+  --color-red-like: #D7443E;
+  --font-text: 'inter', sans-serif;
+  --font-modal-close: 'Nunito', sans-serif;
+  --border-radius-2px: 0.125rem;
+  --border-radius-4px: 0.25rem;
+  --border-radius-8px: 0.5rem;
 }
 
 body {
-    font-family: var(--font-text);
+  font-family: var(--font-text);
+}
+
+body::-webkit-scrollbar {
+  width: .75rem;
+  background-color: var(--color-grey-1);
+}
+
+body::-webkit-scrollbar-thumb {
+  width: .75rem;
+  background-color:var(--color-grey-3);
 }

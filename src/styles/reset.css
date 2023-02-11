@@ -27,6 +27,7 @@ time, mark, audio, video, button, input {
   outline: none;
 	list-style: none;
 	line-height: 150%;
+	border-color: none;
 }
 
 /* HTML5 display-role reset for older browsers */
