@@ -65,7 +65,7 @@ function createPosts(post) {
   countLike.innerText = post.likes  
 
   postInteract.append(openPost, postLikes, countLike)
-  console.log(postInteract)
+  // console.log(postInteract)
   // console.log(openPost)
   publications.append(userBox, postTitle, postContent, postInteract)
 
@@ -91,4 +91,53 @@ export function modalRender(array) {
       // console.log(buttons)
     })
   })
+}
+
+
+//PRECISO SELECIONAR A SECTION .container ; A DIV .suggestions__container E A UL .sugestions__list
+export function renderSuggestions(arraySuggestions) {
+  
+  const divController = document.querySelector('.suggestions__container')
+  const listUsers = document.querySelector('.sugestions__list')
+
+  arraySuggestions.forEach(suggestion => {
+    const users = createSuggestions(suggestion)
+    
+    listUsers.appendChild(users)
+    
+  })
+  
+  divController.appendChild(listUsers)
+}
+  
+
+function createSuggestions(suggestion) {
+  
+  const list = document.createElement('li')
+  list.classList.add('list--users')
+
+  const divBox = document.createElement('div')
+  divBox.classList.add('user_presentation')
+
+  const image = document.createElement('img')
+  image.src = suggestion.img
+  image.alt = suggestion.user
+
+  const divName = document.createElement('div')
+  divName.classList.add('presentation--info')
+
+  const name = document.createElement('h2')
+  name.innerText = suggestion.user
+
+  const stack = document.createElement('p')
+  stack.innerText = suggestion.stack
+
+  divName.append(name, stack)
+  // console.log()
+  const followBtn = document.createElement('button')
+  followBtn.innerText = 'Seguindo'
+  followBtn.classList.add('users--following')
+
+  //fazer os appendes corretos
+  return list
 }
