@@ -59,14 +59,12 @@ function createPosts(post) {
   
   const postLikes = document.createElement('i')
   postLikes.classList.add('fas', 'fa-heart')
-  //DEPOIS CRIAR UM addEventLIstetner PARA CURTR OS POSTS
 
   const countLike = document.createElement('span')
   countLike.innerText = post.likes  
-
+  
   postInteract.append(openPost, postLikes, countLike)
-  // console.log(postInteract)
-  // console.log(openPost)
+  
   publications.append(userBox, postTitle, postContent, postInteract)
 
   return publications
@@ -94,7 +92,7 @@ export function modalRender(array) {
 }
 
 
-//PRECISO SELECIONAR A SECTION .container ; A DIV .suggestions__container E A UL .sugestions__list
+
 export function renderSuggestions(arraySuggestions) {
   
   const mainSection = document.querySelector('.container')

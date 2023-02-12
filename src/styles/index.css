@@ -127,7 +127,6 @@ form > button {
 .suggestions__container > h2 {
   font-size: 1.25rem;
   font-weight: 600;
-  /* margin: 2rem 0; */
   width: 95%;
 }
 
@@ -288,7 +287,5 @@ main {
   color: var(--color-grey-opacity);
 } 
 
-
-/* REVER O LAYOUT DE POSTS NO DESKTOP E RESOLVER O BUG NO CSS MOBILE DA ABA DE SUGESTÕES */
-/* Editar a scrollBar desktop */
+ 
 /* se der tempo implementar a função contar like */

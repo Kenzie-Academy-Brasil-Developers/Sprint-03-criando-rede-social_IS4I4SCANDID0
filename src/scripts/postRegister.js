@@ -4,8 +4,16 @@ export function registerPost(array) {
   const postTitle = document.querySelector('#title')
   const postDescription = document.querySelector('#text')
 
-  if(postTitle === '' || postDescription === ''){
-    alert("Preencha os campos de texto corretamente, e faça uma nova tentativa")
+  if(postTitle.value === '' || postDescription.value === ''){
+
+    // Toastify({
+
+    //   text: "Por favor preencha os campos com as informações solicitadas",
+    //   duration: 3000,
+    //   gravity: "top",
+      
+    // }).showToast()
+    //terminar
   }
 
   const newPost = {
@@ -17,7 +25,7 @@ export function registerPost(array) {
     img: "./src/assets/img/user1.svg",
     likes: 17
   }
-  array.unshift(newPost)
+  array.push(newPost)
 }
 //Resolver o bug do post vazio 
 //Fazer a função conta like 
