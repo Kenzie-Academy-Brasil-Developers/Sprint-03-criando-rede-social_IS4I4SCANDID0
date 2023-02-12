@@ -97,9 +97,10 @@ export function modalRender(array) {
 //PRECISO SELECIONAR A SECTION .container ; A DIV .suggestions__container E A UL .sugestions__list
 export function renderSuggestions(arraySuggestions) {
   
+  const mainSection = document.querySelector('.container')
   const divController = document.querySelector('.suggestions__container')
   const listUsers = document.querySelector('.sugestions__list')
-
+  
   arraySuggestions.forEach(suggestion => {
     const users = createSuggestions(suggestion)
     
@@ -108,6 +109,8 @@ export function renderSuggestions(arraySuggestions) {
   })
   
   divController.appendChild(listUsers)
+
+  mainSection.appendChild(divController)
 }
   
 
@@ -116,15 +119,15 @@ function createSuggestions(suggestion) {
   const list = document.createElement('li')
   list.classList.add('list--users')
 
-  const divBox = document.createElement('div')
-  divBox.classList.add('user_presentation')
+  const divPresentation = document.createElement('div')
+  divPresentation.classList.add('user__presentation')
 
   const image = document.createElement('img')
   image.src = suggestion.img
   image.alt = suggestion.user
 
-  const divName = document.createElement('div')
-  divName.classList.add('presentation--info')
+  const divInfoUser = document.createElement('div')
+  divInfoUser.classList.add('presentation--info')
 
   const name = document.createElement('h2')
   name.innerText = suggestion.user
@@ -132,12 +135,15 @@ function createSuggestions(suggestion) {
   const stack = document.createElement('p')
   stack.innerText = suggestion.stack
 
-  divName.append(name, stack)
-  // console.log()
+  divInfoUser.append(name, stack)
+  
   const followBtn = document.createElement('button')
-  followBtn.innerText = 'Seguindo'
   followBtn.classList.add('users--following')
+  followBtn.innerText = 'Seguindo'
+  
+  divPresentation.append(image, divInfoUser)
 
-  //fazer os appendes corretos
+  list.append(divPresentation,followBtn)
+
   return list
 }
