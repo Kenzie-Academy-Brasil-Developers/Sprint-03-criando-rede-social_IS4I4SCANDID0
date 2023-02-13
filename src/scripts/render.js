@@ -59,6 +59,7 @@ function createPosts(post) {
   
   const postLikes = document.createElement('i')
   postLikes.classList.add('fas', 'fa-heart')
+  postLikes.dataset.likeId = post.id
 
   const countLike = document.createElement('span')
   countLike.innerText = post.likes  
@@ -86,10 +87,10 @@ export function modalRender(array) {
       modalControl.showModal()
       
       closeModal()
-      // console.log(buttons)
     })
   })
 }
+      
 
 
 

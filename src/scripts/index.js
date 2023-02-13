@@ -11,3 +11,4 @@ modalRender(posts)
 eventRegister(posts)
 
 renderSuggestions(suggestUsers)
+

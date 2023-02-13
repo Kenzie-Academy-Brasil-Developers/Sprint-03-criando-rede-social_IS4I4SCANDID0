@@ -6,15 +6,21 @@ export function registerPost(array) {
 
   if(postTitle.value === '' || postDescription.value === ''){
 
-    // Toastify({
+    Toastify({
+      text: 'Por favor preencha os campos com as informações solicitadas',
+      duration: 3000,
+      gravity: 'top',
+      position: 'center',
+      style: {
+        background: '#EA534A',
+        color: '#212529'
+      }
 
-    //   text: "Por favor preencha os campos com as informações solicitadas",
-    //   duration: 3000,
-    //   gravity: "top",
-      
-    // }).showToast()
-    //terminar
+    }).showToast()
+    
+    return
   }
+
 
   const newPost = {
     id: array.length +1,
@@ -26,9 +32,22 @@ export function registerPost(array) {
     likes: 17
   }
   array.push(newPost)
+
+  Toastify({
+    text: 'Post efetuado com sucesso',
+    duration: 3000,
+    gravity: 'top',
+    position: 'center',
+    style: {
+      background: '#1CF46F',
+      color: '#212529'
+    }
+
+  }).showToast()
+
 }
-//Resolver o bug do post vazio 
-//Fazer a função conta like 
+
+
   
 export function eventRegister(array) {
   const postBtn = document.querySelector('#post')
@@ -39,7 +58,6 @@ export function eventRegister(array) {
     registerPost(array)
     
     renderPosts(array)
-    // console.log(array)
   })
 } 
 
