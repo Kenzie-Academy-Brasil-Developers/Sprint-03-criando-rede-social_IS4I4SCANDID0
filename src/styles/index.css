@@ -287,7 +287,3 @@ main {
   color: var(--color-grey-opacity);
 } 
 
-.fas , .fa-heart:hover {
-  color: var(--color-red-like);
-}
- 
